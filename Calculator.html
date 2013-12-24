@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>JavaScript Calculator</title>
+	<link href="index.css" rel="stylesheet">
+	
+	<script language="JavaScript" src="script.js" type="text/javascript"></script>
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+<h1>Calculator :</h1>
+<div class="outerFrame" >
+	
+	<br>		
+	<div class="output"> <input type="text" readonly size="18" id="outputbox" ></div>
+
+
+	<div class="pressButtons">
+
+		<p>	
+		
+		<input type="button" class="button whiteButton" value="C" onclick='set("")' >	
+		</p>
+
+		<p>	
+		<input type="button" class="button whiteButton" value="7" onclick='cal(this.value)'>
+		<input type="button" class="button whiteButton" value="8" onclick='cal(this.value)'>
+		<input type="button" class="button whiteButton" value="9" onclick='cal(this.value)'>
+			<input type="button" class="button redButton" value="*" onclick='cal(this.value)'>
+		</p>
+
+
+		<p>	
+		<input type="button" class="button whiteButton" value="4" onclick='cal(this.value)'>
+		<input type="button" class="button whiteButton" value="5" onclick='cal(this.value)'>
+		<input type="button" class="button whiteButton" value="6" onclick='cal(this.value)'>
+			<input type="button" class="button redButton" value="-" onclick='cal(this.value)'>
+		</p>
+
+		<p> 	
+		<input type="button" class="button whiteButton" value="1" onclick='cal(this.value)'>
+		<input type="button" class="button whiteButton" value="2" onclick='cal(this.value)'>
+		<input type="button" class="button whiteButton" value="3" onclick='cal(this.value)'>
+			<input type="button" class="button redButton" value="+" onclick='cal(this.value)'></p>
+
+		<p>	
+		<input type="button" class="button whiteButton" value="0" onclick='cal(this.value)'>
+		<input type="button" class="button whiteButton" value="." onclick='cal(this.value)'>
+		<input type="button" class="button orangeButton" value="=" onclick='evalAndGiveError()'>
+			<input type="button" class="button redButton" value="/" onclick='cal(this.value)'>
+		</p>
+	</div>
+</div>
+
+</body>
